@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum Type { HIGH, LOW, MEDIUM, NEUTRAL };
+public enum StatType { ECONOMY, HAPPINESS, ECOLOGY, SCIENCE };
+
 [CreateAssetMenu]
 public class Card : ScriptableObject
 {
@@ -13,5 +16,7 @@ public class Card : ScriptableObject
     public int happiness;
     public int ecology;
     public int science;
+    public Type type;
+    public StatType stattype;
 
 }
