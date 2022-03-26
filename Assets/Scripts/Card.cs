@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu]
 public class Card : ScriptableObject
 {
-    public Image    image;
+    public Sprite    sprite;
     public string   title;
     public string   description;
     public int      ecology;
