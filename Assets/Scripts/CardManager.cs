@@ -11,11 +11,14 @@ public class CardManager : MonoBehaviour
     public List<Card> CardList;
     private List<Card>[][] Cards;
 
+    private void Awake()
+    {
+        Cards = FillLists();
+
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Cards = FillLists();
-        GetRandomNumber(0, 0);
     }
 
     private List<Card>[][] FillLists()
@@ -24,16 +27,20 @@ public class CardManager : MonoBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            temp[i] = new List<Card>[3];
-            for (int j = 0; j < 3; j++)
+            temp[i] = new List<Card>[4];
+            for (int j = 0; j < 4; j++)
             {
                 temp[i][j] = new List<Card>();
+
             }
         }
 
+        int e = 0;
         foreach (Card card in CardList)
         {
+            e++;
             temp[(int)card.type][(int)card.tier].Add(card);
+            //Debug.Log($"type {(int)card.type} tier {(int)card.tier}  Cardnb {e}  list Count {temp[(int)card.type][(int)card.tier].Count}");
         }
         return temp;
 
@@ -50,13 +57,29 @@ public class CardManager : MonoBehaviour
         int n = UnityEngine.Random.Range(0, CardList.Count);
         Card[] cardsData = new Card[2];
         cardsData[0] = CardList[n];
-        n = UnityEngine.Random.Range(0, CardList.Count);
-        cardsData[1] = GetSecondCard(cardsData[0]);
-        
-        CardList.Remove(cardsData[1]);
-
+        if ((int)cardsData[0].tier == 3)
+            cardsData[1] = GetNeutralCard();
+        else
+            cardsData[1] = GetSecondCard(cardsData[0]);
         FillCards(cardsData);
         return cardButtons;
+    }
+
+    private Card GetNeutralCard()
+    {
+        Card card = new Card();
+        int n = 0;
+        for (int i = 0; i < 20; i++)
+        {
+            n = UnityEngine.Random.Range(0, 4);
+            if (Cards[n][3].Count != 0)
+            {
+                card = Cards[n][3][UnityEngine.Random.Range(0, Cards[n][3].Count)];
+                break;
+            }
+        }
+
+        return card;
     }
 
     private Card GetSecondCard(Card card)
@@ -69,18 +92,15 @@ public class CardManager : MonoBehaviour
 
     private int GetRandomNumber( int i, int r)
     {
-        int t;
-        int c = 0;
-        Debug.Log(i + " " + r); 
-        while ((t = UnityEngine.Random.Range(0, 4)) == i || Cards[t][r].Count == 0)
+        int t = -1;
+        for (int j = 0; j < 20; j++)
         {
-            c++;
-            if (c > 20)
+            t = UnityEngine.Random.Range(0, 4);
+            if (t != i  && Cards[t][r].Count != 0)
             {
                 break;
             }
             Debug.Log("NO CARDS");
-            continue;
         }
         return t;
     }
