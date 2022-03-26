@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
-  m_Name: Card 41
+  m_Name: Introduction1
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
   title: neutre
   description: kdkddk
-  economy: 5
-  happiness: 0
-  ecology: -5
+  economy: -5
+  happiness: 5
+  ecology: 0
   science: 5
   type: 3
   stattype: 0
