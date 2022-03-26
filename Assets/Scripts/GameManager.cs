@@ -7,7 +7,7 @@ using System.Drawing;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private int currentYear = 0, endYear = 20;
+    [SerializeField] private int currentYear = 0, endYear = 100;
     [SerializeField] private TextMeshPro yearText;
     [SerializeField] private TextMeshPro[] stats;
 
@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     private PlayFabManager playFabManager;
     private CardButton[] cards;
-    private int ecology = 50, happiness = 50, science = 50, economy = 50, turn = 0;
+    private int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
     private bool GameEnded { get; set; }
     
 
@@ -78,5 +78,6 @@ public class GameManager : MonoBehaviour
         happiness = Mathf.Clamp(happiness + card.happiness, 0, 100);
         science = Mathf.Clamp(science + card.science, 0, 100);
         economy = Mathf.Clamp(economy + card.economy, 0, 100);
+        
     }
 }

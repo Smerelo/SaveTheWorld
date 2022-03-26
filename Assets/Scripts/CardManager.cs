@@ -40,7 +40,7 @@ public class CardManager : MonoBehaviour
         {
             e++;
             temp[(int)card.type][(int)card.tier].Add(card);
-            //Debug.Log($"type {(int)card.type} tier {(int)card.tier}  Cardnb {e}  list Count {temp[(int)card.type][(int)card.tier].Count}");
+            Debug.Log($"type {(int)card.type} tier {(int)card.tier}  Cardnb {e}  list Count {temp[(int)card.type][(int)card.tier].Count}");
         }
         return temp;
 
@@ -93,14 +93,14 @@ public class CardManager : MonoBehaviour
     private int GetRandomNumber( int i, int r)
     {
         int t = -1;
-        for (int j = 0; j < 20; j++)
+        for (int j = 0; j < 100; j++)
         {
             t = UnityEngine.Random.Range(0, 4);
             if (t != i  && Cards[t][r].Count != 0)
             {
                 break;
             }
-            Debug.Log("NO CARDS");
+            Debug.Log($"t {t} i {i} r {r} count {Cards[t][r].Count}");
         }
         return t;
     }
