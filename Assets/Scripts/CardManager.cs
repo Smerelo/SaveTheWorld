@@ -26,9 +26,8 @@ public class CardManager : MonoBehaviour
     {
         int n = UnityEngine.Random.Range(0, CardList.Count);
         Card[] cardsData = new Card[2];
-        Debug.Log(CardList[n]);
-
         cardsData[0] = CardList[n];
+        n = UnityEngine.Random.Range(0, CardList.Count);
         cardsData[1] = CardList[n];
 
         //CardList.Remove(cardsData[0]);
