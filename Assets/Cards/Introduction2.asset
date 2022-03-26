@@ -15,9 +15,9 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
   title: neutre
   description: kdkddk
-  economy: -5
-  happiness: 5
+  economy: 0
+  happiness: 0
   ecology: 0
-  science: 5
+  science: 0
+  tier: 3
   type: 3
-  stattype: 0

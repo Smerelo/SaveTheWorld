@@ -19,5 +19,5 @@ MonoBehaviour:
   happiness: 0
   ecology: 10
   science: 0
+  tier: 2
   type: 2
-  stattype: 0
