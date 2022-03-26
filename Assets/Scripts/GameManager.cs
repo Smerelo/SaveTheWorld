@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshPro[] stats;
 
     private CardManager cardManager;
+
+    private PlayFabManager playFabManager;
     private CardButton[] cards;
     private int ecology = 50, happiness = 50, science = 50, economy = 50, turn = 0;
     private bool GameEnded { get; set; }
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        playFabManager = GameObject.Find("PlayFabManager").GetComponent<PlayFabManager>();
         cardManager = GameObject.Find("CardManager").GetComponent<CardManager>();
         cards = cardManager.GetCards();
         UpdateStats();
@@ -27,13 +30,14 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (currentYear == endYear)
-        {
+        {       
             EndGame();
-        }
+        }       
     }
 
     private void EndGame()
     {
+        //playFabManager.SendLeaderboard(happiness, "Happiness");        
         GameEnded = true;
     }
 
