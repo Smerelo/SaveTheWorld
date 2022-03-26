@@ -12,8 +12,7 @@ public class MainMenu : MonoBehaviour
     public void DisplayText()
     {
 
-        displayText.gameObject.SetActive(true);
-        displayText.text = "What ever you want to display";
+        displayText.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
 
     }
