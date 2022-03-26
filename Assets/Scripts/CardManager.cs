@@ -8,12 +8,12 @@ public class CardManager : MonoBehaviour
 {
     [SerializeField] private CardDatabase cardDatabase;
     [SerializeField] private CardButton[] cardButtons;
-    [HideInInspector]public List<Card> CardList;
+    public List<Card> CardList;
 
     // Start is called before the first frame update
     void Start()
     {
-        CardList = cardDatabase.cards;
+        
     }
 
     // Update is called once per frame
@@ -30,8 +30,7 @@ public class CardManager : MonoBehaviour
         n = UnityEngine.Random.Range(0, CardList.Count);
         cardsData[1] = CardList[n];
 
-        //CardList.Remove(cardsData[0]);
-        //CardList.Remove(cardsData[1]);
+        CardList.Remove(cardsData[1]);
 
         FillCards(cardsData);
         return cardButtons;
