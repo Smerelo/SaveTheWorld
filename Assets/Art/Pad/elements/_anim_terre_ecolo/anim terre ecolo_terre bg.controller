@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: anim terre e%cc%81colo_terre bg
+  m_Name: anim terre ecolo_terre bg
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
