@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
   title: "Devenir Pr\xE9sident"
-  description: 'C''est le grand moment, vous '
+  description: "C'est le grand moment, le PEUPLE vous attend, l'\xE9lu c'est VOUS. "
   economy: 0
   happiness: 0
   ecology: 0

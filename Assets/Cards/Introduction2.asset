@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Introduction2
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: neutre
-  description: kdkddk
+  title: "Ne pas devenir pr\xE9sident"
+  description: "Le peuple gronde, si vous prenez cette d\xE9cision, les forces sp\xE9ciales
+    vous forceront \xE0 aller dans votre nouveau bureau quand m\xEAme"
   economy: 0
   happiness: 0
   ecology: 0
