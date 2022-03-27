@@ -58,8 +58,22 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
+        finalScore += StatPoints(ecology);
+        finalScore += StatPoints(economy) ;
+        finalScore += StatPoints(happiness);
+        finalScore += StatPoints(science);
         playFabManager.LeaderboardDisplay(finalScore);        
         GameEnded = true;
+    }
+
+    private int StatPoints(int stat)
+    {
+        int result = 0;
+        if (stat >= 60)
+            result += 100;
+        else if (stat >= 50)
+            result += 50;
+        return result;
     }
 
     public void MakeChoice(int choice)
