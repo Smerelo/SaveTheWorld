@@ -16,7 +16,7 @@ public class Card : ScriptableObject
     public int happiness;
     public int ecology;
     public int science;
+    public int scienceTier;
     public Type tier;
     public StatType type;
-
 }
