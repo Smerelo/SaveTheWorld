@@ -6,56 +6,63 @@ public class EarthState : MonoBehaviour
 {
     public GameManager gameManager;
 
-    public Sprite[] ecologySprite = new Sprite[3];
-    public Sprite[] economySprite = new Sprite[3];
-    public Sprite[] scienceSprite = new Sprite[3];
-    public Sprite[] happinessSprite = new Sprite[3];
+    public GameObject[] ecologySprite;
+    public GameObject[] economySprite;
+    public GameObject[] scienceSprite;
+    public GameObject[] happinessSprite;
 
     public Sprite _sprite;
-    
-    void start()
+
+    void Start()
     {
-        ChangeEarthState();
+        gameManager = FindObjectOfType<GameManager>();
+        //ChangeEarthState();
     }
 
     public void EconomyStates()
     {
-        if (gameManager.ecology >= 50)
-            DisplaySprite(ecologySprite[1]);
-        else if (gameManager.ecology >= 25)
-            DisplaySprite(ecologySprite[2]);
+        if (gameManager.economy >= 50)
+            economySprite[1].SetActive(true);
+        else if (gameManager.economy >= 25)
+            economySprite[2].SetActive(true);
         else
-            DisplaySprite(ecologySprite[3]);
+            economySprite[3].SetActive(true);
     }
 
     public void EcologyStates()
     {
         if (gameManager.ecology >= 50)
-            DisplaySprite(ecologySprite[1]);
+            ecologySprite[1].SetActive(true);
         else if (gameManager.ecology >= 25)
-            DisplaySprite(ecologySprite[2]);
+            ecologySprite[2].SetActive(true);
         else
-            DisplaySprite(ecologySprite[3]);
+            ecologySprite[3].SetActive(true);
+
     }
 
     public void ScienceStates()
     {
         if (gameManager.science >= 50)
-            DisplaySprite(scienceSprite[1]);
+            scienceSprite[1].SetActive(true);
         else if (gameManager.science >= 25)
-            DisplaySprite(scienceSprite[2]);
+            scienceSprite[2].SetActive(true);
+
         else
-            DisplaySprite(scienceSprite[3]);
+            scienceSprite[3].SetActive(true);
+
     }
 
     public void HappinessStates()
     {
         if (gameManager.happiness >= 50)
-            DisplaySprite(happinessSprite[1]);
+            happinessSprite[1].SetActive(true);
+
         else if (gameManager.happiness >= 25)
-            DisplaySprite(happinessSprite[2]);
+            happinessSprite[2].SetActive(true);
+
         else
-            DisplaySprite(happinessSprite[3]);
+            happinessSprite[3].SetActive(true);
+
     }
 
     public void ChangeEarthState()
@@ -69,10 +76,4 @@ public class EarthState : MonoBehaviour
         //************   happiness   ************//
         HappinessStates();
     }
-
-    void DisplaySprite(Sprite sprite)
-    {
-        _sprite = sprite; 
-    }
 }
-        

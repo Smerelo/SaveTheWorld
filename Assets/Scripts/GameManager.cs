@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     private PlayFabManager playFabManager;
     private CardButton[] cards;
-    private int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
+    public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
     private bool GameEnded { get; set; }
     
 
