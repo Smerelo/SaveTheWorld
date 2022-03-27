@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         cards = cardManager.GetCards();
         UpdateStats();
         finalScore = 35;
+        AudioManager.AudioInstance.Play("Song");
     }
 
     void Update()
