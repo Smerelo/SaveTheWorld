@@ -2565,6 +2565,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 82.979
       objectReference: {fileID: 0}
+    - target: {fileID: 2949366172760589758, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1358096641831877404, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
@@ -2685,6 +2689,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 393794244}
     m_Modifications:
+    - target: {fileID: 1916963790924118238, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4427151234869709628, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
