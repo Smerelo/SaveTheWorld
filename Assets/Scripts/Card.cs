@@ -20,11 +20,3 @@ public class Card : ScriptableObject
     public StatType type;
 
 }
-
-public GameObject animation;
-
-    public void PlayAnimation()
-    {
-        animation.SetActive(true);
-    }
-}
