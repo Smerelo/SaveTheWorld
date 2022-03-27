@@ -1295,35 +1295,7 @@ RectTransform:
   m_AnchoredPosition: {x: -5.601175, y: 3.7559545}
   m_SizeDelta: {x: 4.0066, y: 2.0653}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
 --- !u!1 &709133710
-=======
---- !u!1 &743538353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2949366171977866669, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
-  m_PrefabInstance: {fileID: 1955610618}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &743538354
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743538353}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b6c33c60611a34f0fbd84e93f0d5a9ca, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &758890985
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3624,7 +3596,6 @@ MonoBehaviour:
   - {fileID: 993874752}
   - {fileID: 758890986}
   - {fileID: 897610879}
-<<<<<<< Updated upstream
   catastropheTreshold: 20
   card1: {fileID: 0}
   card2: {fileID: 0}
@@ -3632,16 +3603,6 @@ MonoBehaviour:
   happiness: 50
   science: 50
   economy: 50
-=======
-  catastropheTreshold: 30
-  card1: {fileID: 0}
-  card2: {fileID: 0}
-  catastropheChance: 70
-  ecology: 40
-  happiness: 40
-  science: 40
-  economy: 40
->>>>>>> Stashed changes
   turn: 0
 --- !u!4 &1840993228
 Transform:
@@ -3916,8 +3877,6 @@ MonoBehaviour:
   cardButtons:
   - {fileID: 1935449865}
   - {fileID: 2140919395}
-  tier3Chance: 25
-  tier2Chance: 25
   CardList:
   - {fileID: 11400000, guid: b8593121b3ad14bdc8aa9289c2a16178, type: 2}
   - {fileID: 11400000, guid: 39738984706784ab1b955d0d07bd80dd, type: 2}
@@ -4169,11 +4128,7 @@ PrefabInstance:
     - target: {fileID: 1616796110, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: animator
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 550778704}
-=======
-      objectReference: {fileID: 743538354}
->>>>>>> Stashed changes
     - target: {fileID: 1616796110, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: button.Array.data[0]
       value: 
@@ -4188,7 +4143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: highState
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: economySprite.Array.size

@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
             roundsSinceTreshold++;
             if (roundsSinceTreshold >= 1)
             {
-                catastropheChance += 10f;
+                catastropheChance += 5f * catastropheMultiplier;
             }
             int rand = UnityEngine.Random.Range(0, 100);
             if (rand < catastropheChance)
