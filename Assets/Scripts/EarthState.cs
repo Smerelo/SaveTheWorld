@@ -19,61 +19,37 @@ public class EarthState : MonoBehaviour
         //ChangeEarthState();
     }
 
-    public void EconomyStates()
+    public  void SetStates(int state, GameObject[] sprites)
     {
-        if (gameManager.economy >= 50)
-            economySprite[1].SetActive(true);
-        else if (gameManager.economy >= 25)
-            economySprite[2].SetActive(true);
+        if (state >= 50)
+        {
+            sprites[0].SetActive(true);
+            sprites[1].SetActive(false);
+            sprites[2].SetActive(false);
+        }
+        else if (state >= 25)
+        {
+            sprites[1].SetActive(true);
+            sprites[0].SetActive(false);
+            sprites[2].SetActive(false);
+        }
         else
-            economySprite[3].SetActive(true);
+        {
+            sprites[2].SetActive(true);
+            sprites[1].SetActive(false);
+            sprites[0].SetActive(false);
+        }
     }
 
-    public void EcologyStates()
-    {
-        if (gameManager.ecology >= 50)
-            ecologySprite[1].SetActive(true);
-        else if (gameManager.ecology >= 25)
-            ecologySprite[2].SetActive(true);
-        else
-            ecologySprite[3].SetActive(true);
-
-    }
-
-    public void ScienceStates()
-    {
-        if (gameManager.science >= 50)
-            scienceSprite[1].SetActive(true);
-        else if (gameManager.science >= 25)
-            scienceSprite[2].SetActive(true);
-
-        else
-            scienceSprite[3].SetActive(true);
-
-    }
-
-    public void HappinessStates()
-    {
-        if (gameManager.happiness >= 50)
-            happinessSprite[1].SetActive(true);
-
-        else if (gameManager.happiness >= 25)
-            happinessSprite[2].SetActive(true);
-
-        else
-            happinessSprite[3].SetActive(true);
-
-    }
-
-    public void ChangeEarthState()
+    public void UpdateEarthState()
     {
         //************   economy   ************//
-        EconomyStates();
+        //SetStates(gameManager.economy,economySprite) ;
         //************   ecology   ************//
-        EcologyStates();
+        SetStates(gameManager.ecology, ecologySprite);
         //************  science  ************//
-        ScienceStates();
+        SetStates(gameManager.science, scienceSprite);
         //************   happiness   ************//
-        HappinessStates();
+        //SetStates(gameManager.happiness, happinessSprite);
     }
 }

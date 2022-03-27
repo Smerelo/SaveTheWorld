@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshPro[] stats;
 
     private CardManager cardManager;
-
+    public EarthState earthState;
     private PlayFabManager playFabManager;
     private CardButton[] cards;
     public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
@@ -46,14 +46,15 @@ public class GameManager : MonoBehaviour
         if (!GameEnded)
         {
             turn++;
-            if (turn % 5 == 0)
-            {
-                ShowStats();
-            }
+
             currentYear++;
             yearText.text = currentYear.ToString();
             AddPoints(cards[choice].cardData);
             UpdateStats();
+            if (turn % 3 == 0)
+            {
+                ShowStats();
+            }
             cards = cardManager.GetCards();
         }
 
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     private void ShowStats()
     {
-        
+        earthState.UpdateEarthState();
     }
 
     private void UpdateStats()
