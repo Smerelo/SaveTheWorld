@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 54
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
+  sprite: {fileID: 21300000, guid: c8b45a21451a74eec8b73efdce851b46, type: 3}
   title: Plus jamais faim
-  description: kdkddk
+  description: "\"Une nouvelle nourriture vient d\u2019\xEAtre invent\xE9e, le Blarf.
+    Son co\xFBt est nul et son apport calorique \xE9lev\xE9\". "
   economy: 0
   happiness: 10
   ecology: 0

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
   title: "R\xE9volution - Redistribuer les richesses"
-  description: kdkddk
+  description: "Vous redistribuez mieux les richesses pour calmer la col\xE8re du
+    peuple. "
   economy: -20
   happiness: 25
   ecology: 0

@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 38
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: neutre
-  description: kdkddk
+  sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
+  title: "Plante connect\xE9e "
+  description: "V\xE9rifier la sant\xE9 de votre plante gr\xE2ce \xE0 votre smartphone. "
   economy: 0
   happiness: -5
   ecology: 5
   science: 5
+  scienceTier: 0
   tier: 3
   type: 3

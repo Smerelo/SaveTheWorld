@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 37
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: neutre
-  description: kdkddk
+  sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
+  title: 'Hologramme '
+  description: "Discuter avec des hologrammes c\u2019est plus sympa que la visio. "
   economy: 5
   happiness: 0
   ecology: 5
   science: -5
+  scienceTier: 0
   tier: 3
   type: 3

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 2
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
+  sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
   title: "Comme dans la r\xE9alit\xE9"
-  description: kdkddk
+  description: "Vivre tous ensemble dans une r\xE9alit\xE9 virtuelle, le M\xE9taverse
+    est pr\xEAt a \xEAtre lanc\xE9. "
   economy: 15
   happiness: -10
   ecology: 0

@@ -71,7 +71,6 @@ public class CardManager : MonoBehaviour
 
     private Card GetNeutralCard()
     {
-        Debug.Log("here1");
         Card card = null;
         int n = 0;
         for (int i = 0; i < 20; i++)
@@ -90,8 +89,6 @@ public class CardManager : MonoBehaviour
 
     private Card GetSecondCard(Card card)
     {
-        Debug.Log("here2");
-
         int rand = GetRandomNumber((int)card.type, (int)card.tier);
         int cardIndex = UnityEngine.Random.Range(0, Cards[rand][(int)card.tier].Count);
         i2 = cardIndex;
@@ -100,7 +97,6 @@ public class CardManager : MonoBehaviour
         {
             cardIndex = 0 ;
         }
-        Debug.Log("dijajiodsjiodj");
         Card cardTemp = Cards[(int)card.type][(int)card.tier][cardIndex];
         return cardTemp;
     }

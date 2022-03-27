@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 44
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: Ordinateur Quantique
-  description: kdkddk
+  sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
+  title: 'Ordinateur Quantique '
+  description: "L\u2019humanit\xE9 passe \xE0 l\u2019\xE8re quantique, les calculs
+    vont \xE0 une vitesse ph\xE9nom\xE9nales. "
   economy: 10
   happiness: 0
   ecology: 0

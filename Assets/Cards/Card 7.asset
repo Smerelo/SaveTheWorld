@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 7
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
+  sprite: {fileID: 21300000, guid: a40c2844a2be541fe8127457f847c360, type: 3}
   title: Low Tech
-  description: kdkddk
+  description: "Tout le monde se met \xE0 faire de la Low Tech pour remplacer ses
+    appareils du quotidien. "
   economy: -20
   happiness: 10
   ecology: 5

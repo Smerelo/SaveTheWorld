@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
   title: "Krach Boursier - Imp\xF4ts"
-  description: kdkddk
+  description: "Un imp\xF4t exceptionnel est mis en place pour renflouer les banques. "
   economy: 25
   happiness: -20
   ecology: 0

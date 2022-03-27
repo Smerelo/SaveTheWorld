@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 50
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
+  sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
   title: "Fini l\u2019ob\xE9sit\xE9"
-  description: kdkddk
+  description: "Une pilule emp\xEAche les humains de tomber en surpoids. "
   economy: 0
   happiness: 0
   ecology: 10

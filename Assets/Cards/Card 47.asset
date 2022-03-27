@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 47
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
+  sprite: {fileID: 21300000, guid: a40c2844a2be541fe8127457f847c360, type: 3}
   title: Grosse donation
-  description: kdkddk
+  description: "\"Jeff B. vous soutient et vous donne 1000 milliards de dollars !
+    Il a d\xE9sormais un bureau a c\xF4t\xE9 du votre\"."
   economy: 10
   happiness: 0
   ecology: 0

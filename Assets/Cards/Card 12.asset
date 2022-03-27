@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 12
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: low
-  description: "Voyage via stratosph\xE8re"
+  sprite: {fileID: 21300000, guid: 83e18b54cdd6745a593475cb96c7fda7, type: 3}
+  title: "Voyage via la stratosph\xE8re "
+  description: "Pour aller plus vite, des avions hypersoniques passeront par la stratosph\xE8re
+    pour faire Paris - Tokyo en 2h30. "
   economy: 5
   happiness: 10
   ecology: -15

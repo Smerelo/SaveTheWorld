@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
   title: "R\xE9volution - Polluer le pays"
-  description: kdkddk
+  description: "Vous matez la r\xE9volution en rendant inhabitables les zones o\xF9
+    vivent les contestataires. "
   economy: 0
   happiness: 25
   ecology: -20
