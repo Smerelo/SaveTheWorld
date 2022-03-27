@@ -192,8 +192,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator AlertRoutine(GameObject alert, GameObject alertType ,float time)
     {
+
         ipadAnim.SetTrigger("Ipad");
-       // AudioManager.AudioInstance.Play("Alert");
+       AudioManager.AudioInstance.Play("Alarm");
         alert.SetActive(true);
         alertType.SetActive(true);
         yield return new WaitForSeconds(time);

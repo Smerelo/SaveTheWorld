@@ -1653,6 +1653,12 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     Loop: 1
+  - name: Alarm
+    clip: {fileID: 8300000, guid: 6cdd8c228bda13b4f9f71c1be0bfd8d7, type: 3}
+    volume: 0.777
+    pitch: 1
+    source: {fileID: 0}
+    Loop: 0
 --- !u!4 &599731693
 Transform:
   m_ObjectHideFlags: 0
@@ -5066,10 +5072,10 @@ MonoBehaviour:
   - {fileID: 993874752}
   - {fileID: 758890986}
   - {fileID: 897610879}
-  catastropheTreshold: 30
+  catastropheTreshold: 35
   card1: {fileID: 0}
   card2: {fileID: 0}
-  catastropheChance: 70
+  catastropheChance: 50
   ecology: 40
   happiness: 40
   science: 40
