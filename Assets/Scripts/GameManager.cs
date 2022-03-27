@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int catastropheTreshold = 15;
     [SerializeField] private CardUI card1, card2;
     private CardManager cardManager;
-    public EarthState earthState;
+    private EarthState earthState;
     private PlayFabManager playFabManager;
     private float catastropheChance = 0f;
     private CardButton[] cards;
@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        earthState = FindObjectOfType<EarthState>();
         playFabManager = GameObject.Find("PlayFabManager").GetComponent<PlayFabManager>();
         cardManager = GameObject.Find("CardManager").GetComponent<CardManager>();
         cards = cardManager.GetCards();
