@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Card 11
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: low
+  title: Constellation stellaire
   description: kdkddk
   economy: 10
   happiness: 5
   ecology: -20
   science: 10
+  scienceTier: 0
   tier: 1
   type: 2

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Card 15
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: medium
+  title: Taxi volant
   description: kdkddk
   economy: 10
   happiness: -5
   ecology: 0
   science: 0
+  scienceTier: 0
   tier: 2
   type: 0

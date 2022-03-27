@@ -9,6 +9,9 @@ public class CardManager : MonoBehaviour
     [SerializeField] private CardDatabase cardDatabase;
     [SerializeField] private CardButton[] cardButtons;
     public List<Card> CardList;
+    public List<Card> CardListTwo;
+    public List<Card> CardListThree;
+    public List<Card> CardListCatastrophe;
     private List<Card>[][] Cards;
     private int i1 = 0, i2 = 0;
     private void Awake()
