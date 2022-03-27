@@ -7,6 +7,7 @@ using System.Drawing;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject outroCanvas;
     [SerializeField] private int currentYear = 0, endYear = 100;
     [SerializeField] private TextMeshPro yearText;
     [SerializeField] private TextMeshPro[] stats;
@@ -63,6 +64,7 @@ public class GameManager : MonoBehaviour
         finalScore += StatPoints(happiness);
         finalScore += StatPoints(science);
         GameEnded = true;
+        outroCanvas.SetActive(true);
         playFabManager.LeaderboardDisplay(finalScore);        
     }
 

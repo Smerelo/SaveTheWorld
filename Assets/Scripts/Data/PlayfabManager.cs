@@ -88,9 +88,9 @@ public class PlayFabManager : MonoBehaviour
         SendLeaderboard(score);
         ipad.GetComponent<Animator>().SetBool("Ipad", true);        
         ipadLeaderBoardScreen.SetActive(true);
+        ipad.GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(WaitOneSec(3f));  
     }
-
         IEnumerator WaitOneSec(float time)
     {
         yield return new WaitForSeconds(time);
