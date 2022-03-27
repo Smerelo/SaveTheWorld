@@ -15,12 +15,12 @@ public class Signature : MonoBehaviour
     public void Sign()
     {
         animator.SetBool("PaperSigned", true);
-
-        StartCoroutine(WaitOneSec(1));
+        StartCoroutine(WaitOneSec(1.2f));
     }
 
     IEnumerator WaitOneSec(float time)
     {
+        AudioManager.AudioInstance.Play("Paper");
         yield return new WaitForSeconds(time);
         animator.SetBool("PaperSigned", false);
         gameManager.MakeChoice(id);
