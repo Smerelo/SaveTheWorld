@@ -2365,13 +2365,14 @@ MonoBehaviour:
   - {fileID: 993874752}
   - {fileID: 758890986}
   - {fileID: 897610879}
-  catastropheTreshold: 20
+  catastropheTreshold: 25
   card1: {fileID: 0}
   card2: {fileID: 0}
-  ecology: 25
-  happiness: 25
-  science: 25
-  economy: 25
+  catastropheChance: 100
+  ecology: 40
+  happiness: 40
+  science: 40
+  economy: 40
   turn: 0
 --- !u!4 &1840993228
 Transform:
@@ -2687,11 +2688,11 @@ PrefabInstance:
       objectReference: {fileID: 2140919396}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: midState
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: highState
-      value: 45
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: scienceSprite.Array.data[0]
