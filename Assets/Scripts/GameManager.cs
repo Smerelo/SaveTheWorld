@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private CardManager cardManager;
     private EarthState earthState;
     private PlayFabManager playFabManager;
-    private float catastropheChance = 0f;
+    public float catastropheChance = 0f;
     private CardButton[] cards;
     private int roundsSinceTreshold = 0, catastropheMultiplier = 0;
     public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
             roundsSinceTreshold++;
             if (roundsSinceTreshold >= 1)
             {
-                catastropheChance += 5f * catastropheMultiplier;
+                catastropheChance += 10f;
             }
             int rand = UnityEngine.Random.Range(0, 100);
             if (rand < catastropheChance)

@@ -56,7 +56,6 @@ public class PlayFabManager : MonoBehaviour
     private void OnleaderboardUpdate(UpdatePlayerStatisticsResult result)
     {
         Debug.Log("leaderboard sent successfully");
-        GetLeaderboard();
     }
 
     public void GetLeaderboard()
@@ -91,6 +90,7 @@ public class PlayFabManager : MonoBehaviour
         SendLeaderboard(score);
         ipad.GetComponent<Animator>().SetBool("Ipad", true);
         ipadLeaderBoardScreen.SetActive(true);
-     //   earthScreen.SetActive(false);
+        GetLeaderboard();
+        //   earthScreen.SetActive(false);
     }
 }
