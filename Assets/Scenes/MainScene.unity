@@ -4156,7 +4156,7 @@ PrefabInstance:
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: economySprite.Array.data[0]
       value: 
-      objectReference: {fileID: 1156451047}
+      objectReference: {fileID: 1911641371}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: economySprite.Array.data[1]
       value: 
@@ -4164,7 +4164,7 @@ PrefabInstance:
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: economySprite.Array.data[2]
       value: 
-      objectReference: {fileID: 1911641371}
+      objectReference: {fileID: 1156451047}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: scienceSprite.Array.data[0]
       value: 
