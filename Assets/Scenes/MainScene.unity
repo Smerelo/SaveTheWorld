@@ -687,6 +687,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422856331}
   m_CullTransparentMesh: 1
+--- !u!1 &448329559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2949366172366568907, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+  m_PrefabInstance: {fileID: 1955610618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &508207282 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4427151235646041111, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
@@ -2353,14 +2358,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentYear: 2022
-  endYear: 2042
+  endYear: 2034
   yearText: {fileID: 143606484}
   stats:
   - {fileID: 701910592}
   - {fileID: 993874752}
   - {fileID: 758890986}
   - {fileID: 897610879}
-  catastropheTreshold: 15
+  catastropheTreshold: 20
   card1: {fileID: 0}
   card2: {fileID: 0}
   ecology: 25
@@ -2644,6 +2649,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1918207709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2949366172781622670, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+  m_PrefabInstance: {fileID: 1955610618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1935449861 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4427151235565169835, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
@@ -2675,6 +2685,14 @@ PrefabInstance:
       propertyPath: button.Array.data[1]
       value: 
       objectReference: {fileID: 2140919396}
+    - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: scienceSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 448329559}
+    - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: scienceSprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 1918207709}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: scienceSprite.Array.data[2]
       value: 

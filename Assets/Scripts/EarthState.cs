@@ -11,6 +11,8 @@ public class EarthState : MonoBehaviour
     public GameObject[] scienceSprite;
     public GameObject[] happinessSprite;
 
+    public int midState;
+    public int highState;
     public Sprite _sprite;
 
     void Start()
@@ -21,13 +23,13 @@ public class EarthState : MonoBehaviour
 
     public  void SetStates(int state, GameObject[] sprites)
     {
-        if (state >= 50)
+        if (state >= highState)
         {
             sprites[0].SetActive(true);
             sprites[1].SetActive(false);
             sprites[2].SetActive(false);
         }
-        else if (state >= 25)
+        else if (state >= midState)
         {
             sprites[1].SetActive(true);
             sprites[0].SetActive(false);
