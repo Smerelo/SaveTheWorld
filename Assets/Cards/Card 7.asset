@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a40c2844a2be541fe8127457f847c360, type: 3}
   title: Low Tech
-  description: "Tout le monde se met \xE0 faire de la Low Tech pour remplacer ses
-    appareils du quotidien. "
+  description: La Low Tech commence a remplacer les appareils du quotidien. Transformez
+    votre chaise en panneau solaire.
   economy: -20
   happiness: 10
   ecology: 5

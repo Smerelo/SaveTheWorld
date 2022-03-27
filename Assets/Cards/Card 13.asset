@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
   title: Sheep Coin
-  description: "La crypto monnaie Sheep Coin remplace d\xE9sormais la monnaie mondiale. "
+  description: "La crypto monnaie Sheep Coin remplace d\xE9sormais l\u2019euro."
   economy: 10
   happiness: -5
   ecology: -5

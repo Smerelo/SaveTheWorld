@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Card 10
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5cfd9bbfdae24448ba5dba271a6abd99, type: 3}
-  title: Robot policier
-  description: "Des robots policiers accompagnent d\xE9sormais les forces de l\u2019ordre
-    mais il ne sont pas aussi performant. "
+  title: Robocop
+  description: "Des robots policiers accompagnent d\xE9sormais les forces de l\u2019ordre.
+    Attention ! Ils ont la g\xE2chette facile. "
   economy: 5
   happiness: -15
   ecology: 10

@@ -15,7 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
   title: Telekinesie
   description: "Gr\xE2ce \xE0 une puce, un humain peut r\xE9ussir \xE0 communiquer
-    par la pens\xE9e. "
+    par la pens\xE9e. Ne jouez pas aux cartes avec."
   economy: 0
   happiness: 10
   ecology: 0

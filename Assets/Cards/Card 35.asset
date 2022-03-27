@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Card 35
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d6194a4dd8cc3439db036df0c14ca0d9, type: 3}
-  title: 'Chauffages avec les ordinateurs '
+  title: Chaleur fatale
   description: "Les serveurs s\u2019invitent dans les maisons pour les chauffer. "
   economy: -5
   happiness: 5

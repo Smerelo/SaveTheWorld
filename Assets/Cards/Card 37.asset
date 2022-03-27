@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
   title: 'Hologramme '
-  description: "Discuter avec des hologrammes c\u2019est plus sympa que la visio. "
+  description: "Discuter en Visio c\u2019est bien, avec des hologrammes c\u2019est
+    mieux."
   economy: 5
   happiness: 0
   ecology: 5

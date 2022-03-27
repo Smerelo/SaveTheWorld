@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Card 27
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 83e18b54cdd6745a593475cb96c7fda7, type: 3}
-  title: 'RER Z '
-  description: 'Transport du futur, le RER Z relie les capital a Mach 5. '
+  title: Hyperloop
+  description: "Transport du futur, le RER Z relie les capitales \xE0 Mach 5."
   economy: -5
   happiness: -5
   ecology: 10

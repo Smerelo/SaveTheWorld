@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Card 18
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 09dcd3ff5efae4c808a39eaa11680915, type: 3}
-  title: Colonie sur Mars
+  title: Seul sur mars
   description: "Le futur de l\u2019humanit\xE9 passera par l\u2019exploration spatiale,
     aidez nous a financer la premi\xE8re colonie. "
   economy: -5

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a32bc4d1e2edd4c98ab85e6c423fc48f, type: 3}
   title: "T\xE9l\xE9 3D immersive "
-  description: "Cette technologie vous permet de vivre un film comme si vous y \xE9tiez
-    gr\xE2ce a ses projections en 3 dimensions. "
+  description: "Le futuroscope ? Has-been ! Avec cette technologie vous pouvez vivre
+    un film comme si vous y \xE9tiez gr\xE2ce a ses projections en 3 dimensions."
   economy: 5
   happiness: 0
   ecology: 0

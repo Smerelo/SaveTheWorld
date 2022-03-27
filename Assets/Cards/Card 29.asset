@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 619841c04ce914b6f8ef1abe2b392b03, type: 3}
   title: "Rem\xE8de contre la calvitie "
-  description: "Une cr\xE8me miracle qui fait repousser les cheveux. "
+  description: "Une cr\xE8me miracle qui fait repousser les cheveux. Le r\xEAve des
+    trentenaires."
   economy: 5
   happiness: 5
   ecology: 0

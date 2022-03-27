@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card 40
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
-  title: 'Cerebral '
-  description: "Financer une startup qui investit dans les possibilit\xE9s du cerveau. "
+  title: Limitless
+  description: "Une startup vous promet de trouver une pilule pour utiliser votre
+    cerveau \xE0 100%."
   economy: 0
   happiness: 0
   ecology: 0

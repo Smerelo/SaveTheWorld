@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 2dd1386fbdd5a4b36ad2a7cd0a177bc3, type: 3}
   title: Exosquelette
-  description: "Un \xEAtre humain peut porter 10 fois son poids ! "
+  description: "Vous pourrez frimer \xE0 la salle de sport. Un \xEAtre humain peut
+    porter 10 fois son poids !"
   economy: -5
   happiness: 10
   ecology: -5

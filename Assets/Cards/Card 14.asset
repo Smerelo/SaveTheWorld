@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Card 14
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: c8b45a21451a74eec8b73efdce851b46, type: 3}
-  title: Food truck autonome
+  title: Steack overflow
   description: "Des food truck autonomes circulent partout, la bonne nourriture est
     a port\xE9e de main. "
   economy: 10

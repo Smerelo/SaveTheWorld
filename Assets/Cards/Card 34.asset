@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card 34
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 619841c04ce914b6f8ef1abe2b392b03, type: 3}
-  title: 'Creme de bronzage '
-  description: "Une cr\xE8me pour \xEAtre bronz\xE9 toute l\u2019ann\xE9e. "
+  title: Point soleil
+  description: "Arr\xEAtez de vous payer des vacances au soleil, cette cr\xE8me vous
+    donnera bonne mine toute l\u2019ann\xE9e."
   economy: 0
   happiness: 5
   ecology: -5

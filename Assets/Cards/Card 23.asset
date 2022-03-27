@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Card 23
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5cfd9bbfdae24448ba5dba271a6abd99, type: 3}
-  title: 'Drone Abeille '
-  description: "Elles pollinisent les champs et les for\xEAts quand il manque des
-    abeilles. "
+  title: "Maya l\u2019abeille"
+  description: "Les abeilles sont en voie d\u2019extinction, remplacez-les par des
+    nanos abeilles robots."
   economy: -5
   happiness: -5
   ecology: 10

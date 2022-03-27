@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Card 48
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d6194a4dd8cc3439db036df0c14ca0d9, type: 3}
-  title: Ville intelligente et autonome
+  title: Ville intelligente
   description: "Les villes sont plus propres, plus s\xE9curis\xE9es et plus \xE9cologiques
     depuis que tout est optimis\xE9 par une Intelligence Artificielle. "
   economy: 0

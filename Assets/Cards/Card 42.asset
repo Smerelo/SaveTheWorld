@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
   title: 'LifeX '
-  description: "La soci\xE9t\xE9 LifeX fait une lev\xE9e de fond. Son concept : stimul\xE9
-    la libido des animaux en voie de disparition afin de les r\xE9int\xE9grer dans
-    l\u2019\xE9cosyst\xE8me. "
+  description: "La soci\xE9t\xE9 LifeX fait une lev\xE9e de fond. Son concept : stimuler
+    la libido des animaux en voie de disparition."
   economy: 0
   happiness: -5
   ecology: 5
