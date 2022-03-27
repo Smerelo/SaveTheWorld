@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private float catastropheChance = 0f;
     private CardButton[] cards;
     private int roundsSinceTreshold = 0, catastropheMultiplier = 0;
-    private int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
+    [HideInInspector] public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
     private bool ecologyCatastrophe;
     private bool economyCatastrophe;
     private bool happinessCatastrophe;
