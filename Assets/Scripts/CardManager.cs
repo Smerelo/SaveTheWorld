@@ -9,8 +9,11 @@ public class CardManager : MonoBehaviour
     [SerializeField] private CardDatabase cardDatabase;
     [SerializeField] private CardButton[] cardButtons;
     public List<Card> CardList;
+    public List<Card> CardListTwo;
+    public List<Card> CardListThree;
+    public List<Card> CardListCatastrophe;
     private List<Card>[][] Cards;
-
+    private int i1 = 0, i2 = 0;
     private void Awake()
     {
         Cards = FillLists();
@@ -40,7 +43,7 @@ public class CardManager : MonoBehaviour
         {
             e++;
             temp[(int)card.type][(int)card.tier].Add(card);
-            Debug.Log($"type {(int)card.type} tier {(int)card.tier}  Cardnb {e}  list Count {temp[(int)card.type][(int)card.tier].Count}");
+            //Debug.Log($"type {(int)card.type} tier {(int)card.tier}  Cardnb {e}  list Count {temp[(int)card.type][(int)card.tier].Count}");
         }
         return temp;
 
@@ -57,7 +60,8 @@ public class CardManager : MonoBehaviour
         int n = UnityEngine.Random.Range(0, CardList.Count);
         Card[] cardsData = new Card[2];
         cardsData[0] = CardList[n];
-        if ((int)cardsData[0].tier == 3)
+        i1 = n;
+        if ((int)cardsData[0].type == 3)
             cardsData[1] = GetNeutralCard();
         else
             cardsData[1] = GetSecondCard(cardsData[0]);
@@ -67,15 +71,17 @@ public class CardManager : MonoBehaviour
 
     private Card GetNeutralCard()
     {
-        Card card = new Card();
+        Debug.Log("here1");
+        Card card = null;
         int n = 0;
         for (int i = 0; i < 20; i++)
         {
             n = UnityEngine.Random.Range(0, 4);
-            if (Cards[n][3].Count != 0)
+            if (Cards[3][n].Count != 0)
             {
-                card = Cards[n][3][UnityEngine.Random.Range(0, Cards[n][3].Count)];
-                break;
+                i2 = n;
+                card = Cards[3][n][UnityEngine.Random.Range(0, Cards[3][n].Count)];
+                return card;
             }
         }
 
@@ -84,23 +90,32 @@ public class CardManager : MonoBehaviour
 
     private Card GetSecondCard(Card card)
     {
-        int r = GetRandomNumber((int)card.type, (int)card.tier);
-        int i = UnityEngine.Random.Range(0, Cards[r][(int)card.tier].Count);
-        Card t = Cards[(int)card.type][(int)card.tier][i];
-        return t;
+        Debug.Log("here2");
+
+        int rand = GetRandomNumber((int)card.type, (int)card.tier);
+        int cardIndex = UnityEngine.Random.Range(0, Cards[rand][(int)card.tier].Count);
+        i2 = cardIndex;
+        //Debug.Log($"rand {rand} tier {(int)card.tier} ");
+        if (cardIndex >= Cards[rand][(int)card.tier].Count)
+        {
+            cardIndex = 0 ;
+        }
+        Debug.Log("dijajiodsjiodj");
+        Card cardTemp = Cards[(int)card.type][(int)card.tier][cardIndex];
+        return cardTemp;
     }
 
-    private int GetRandomNumber( int i, int r)
+    private int GetRandomNumber( int type, int tier)
     {
         int t = -1;
         for (int j = 0; j < 100; j++)
         {
             t = UnityEngine.Random.Range(0, 4);
-            if (t != i  && Cards[t][r].Count != 0)
+            if (t != type  && Cards[t][tier].Count != 0)
             {
-                break;
+                return t;
             }
-            Debug.Log($"t {t} i {i} r {r} count {Cards[t][r].Count}");
+            //Debug.Log($"t {t} i {type} r {tier} count {Cards[t][tier].Count}");
         }
         return t;
     }
@@ -117,8 +132,13 @@ public class CardManager : MonoBehaviour
         }
     }
 
-    public void RemoveCard(Card card)
+    public void RemoveCard(Card card1, Card card2)
     {
-        CardList.Remove(card);
+        Debug.Log($"type1 {(int)card1.type}  tier1 {(int)card1.tier}  i1 {i1}");
+        Debug.Log($"type2 {(int)card2.type}  tier2 {(int)card2.tier} i2 {i2}  ");
+
+        CardList.RemoveAt(i1);
+        CardList.Remove(card2);
+
     }
 }

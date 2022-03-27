@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Card 18
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: medium
+  title: Colonie sur Mars
   description: kdkddk
   economy: -5
   happiness: 10
   ecology: -5
   science: 5
+  scienceTier: 0
   tier: 2
   type: 1

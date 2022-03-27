@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Card 4
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: high
+  title: Redonne les sens
   description: kdkddk
   economy: 0
   happiness: 15
   ecology: -10
   science: 0
+  scienceTier: 0
   tier: 0
   type: 1
