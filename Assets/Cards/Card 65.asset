@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 65
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: Catastrophe Climatique - Loi martiale
+  sprite: {fileID: 21300000, guid: cf0f2b1fc66f646509a7673d673bf042, type: 3}
+  title: Loi martiale
   description: "Un tsunami g\xE9ant a d\xE9vast\xE9 la plan\xE8te, le maintien de
     l\u2019ordre est votre priorit\xE9. Vous imposez la loi martiale."
   economy: 0

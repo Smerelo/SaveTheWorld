@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour
         cardManager = GameObject.Find("CardManager").GetComponent<CardManager>();
         cards = cardManager.GetCards();
         UpdateStats();
-        finalScore = 35;
         AudioManager.AudioInstance.Play("Song");
     }
 
@@ -58,12 +57,13 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
+        finalScore = 0;
         finalScore += StatPoints(ecology);
         finalScore += StatPoints(economy) ;
         finalScore += StatPoints(happiness);
         finalScore += StatPoints(science);
-        playFabManager.LeaderboardDisplay(finalScore);        
         GameEnded = true;
+        playFabManager.LeaderboardDisplay(finalScore);        
     }
 
     private int StatPoints(int stat)

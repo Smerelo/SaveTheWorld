@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 67
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: "R\xE9volution - Polluer le pays"
+  sprite: {fileID: 21300000, guid: 59a0fbc3939784e75a53919f2f1cc5ec, type: 3}
+  title: Polluer le pays
   description: "La r\xE9volution \xE0 \xE9t\xE9 entendue mais elle a laiss\xE9 des
     traces dans l\u2019environnement."
   economy: 0

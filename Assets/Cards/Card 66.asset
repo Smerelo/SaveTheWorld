@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 66
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: "R\xE9volution - Redistribuer les richesses"
+  sprite: {fileID: 21300000, guid: 67d2321ee12cd48be9a6de83565d5170, type: 3}
+  title: Redistribuer les richesses
   description: "Vous redistribuez mieux les richesses pour calmer la col\xE8re du
     peuple, le budget en prend un coup."
   economy: -20

@@ -14,8 +14,6 @@ public class PlayFabManager : MonoBehaviour
     [SerializeField] private GameObject ipadLeaderBoardScreen;
     [SerializeField] private GameObject earthScreen;
 
-    
-    public int score;
     void Start()
     {
         Login();
@@ -88,9 +86,14 @@ public class PlayFabManager : MonoBehaviour
     public void LeaderboardDisplay(int score)
     {
         SendLeaderboard(score);
-        ipad.GetComponent<Animator>().SetBool("Ipad", true);
+        ipad.GetComponent<Animator>().SetBool("Ipad", true);        
         ipadLeaderBoardScreen.SetActive(true);
+        StartCoroutine(WaitOneSec(3f));  
+    }
+
+        IEnumerator WaitOneSec(float time)
+    {
+        yield return new WaitForSeconds(time);
         GetLeaderboard();
-        //   earthScreen.SetActive(false);
     }
 }

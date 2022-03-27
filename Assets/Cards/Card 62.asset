@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 62
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: "Krach Boursier - Imp\xF4ts"
+  sprite: {fileID: 21300000, guid: cf0f2b1fc66f646509a7673d673bf042, type: 3}
+  title: "Imp\xF4ts"
   description: "Sauvez les entreprises ! Un imp\xF4t exceptionnel est mis en place."
   economy: 25
   happiness: -20

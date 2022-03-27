@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b5f542e1e5486aa2a3e870a988ee0, type: 3}
   m_Name: Card 63
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ae9581d48826f45e89bd37bf0c61d2fb, type: 3}
-  title: Krach Boursier - Piller la nature
+  sprite: {fileID: 21300000, guid: 59a0fbc3939784e75a53919f2f1cc5ec, type: 3}
+  title: Piller la nature
   description: "Au diable la nature ! L\u2019\xE9conomie doit \xEAtre redress\xE9e
     quoi qu\u2019il en co\xFBte. "
   economy: 25
