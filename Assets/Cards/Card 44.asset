@@ -16,7 +16,7 @@ MonoBehaviour:
   title: 'Ordinateur Quantique '
   description: "L\u2019humanit\xE9 passe \xE0 l\u2019\xE8re quantique, les calculs
     vont \xE0 une vitesse ph\xE9nom\xE9nales. "
-  economy: 10
+  economy: 5
   happiness: 0
   ecology: 0
   science: 0

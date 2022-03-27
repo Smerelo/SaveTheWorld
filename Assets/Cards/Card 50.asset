@@ -17,7 +17,7 @@ MonoBehaviour:
   description: "Une pilule emp\xEAche les humains de tomber en surpoids. "
   economy: 0
   happiness: 0
-  ecology: 10
+  ecology: 5
   science: 0
   scienceTier: 1
   tier: 0

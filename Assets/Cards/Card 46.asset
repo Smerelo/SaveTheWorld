@@ -16,7 +16,7 @@ MonoBehaviour:
   title: Skin de vetement
   description: "Vous avez des v\xEAtements digitaux customisables \xE0 l\u2019infini.
     Parfait pour les soir\xE9es d\xE9guis\xE9es."
-  economy: 10
+  economy: 5
   happiness: 0
   ecology: 0
   science: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   title: Grosse donation
   description: "\"Jeff B. vous soutient et vous donne 1000 milliards de dollars !
     Il a d\xE9sormais un bureau a c\xF4t\xE9 du votre\"."
-  economy: 10
+  economy: 5
   happiness: 0
   ecology: 0
   science: 0
