@@ -147,13 +147,13 @@ public class GameManager : MonoBehaviour
     {
         if (ecologyCatastrophe)
         {
-            StartCoroutine(AlertRoutine(alert, ecologyAlert, 4f));            
+            StartCoroutine(AlertRoutine(alert, ecologyAlert, 6f));            
             cards  = cardManager.GetEcoCards();
             Debug.Log("EcoCatastrophe");
         }
         else  if (economyCatastrophe)
         {
-            StartCoroutine(AlertRoutine(alert, economyAlert, 4f));            
+            StartCoroutine(AlertRoutine(alert, economyAlert, 6f));            
 
             cards = cardManager.GetEconCards();
 
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
         }
         else if (happinessCatastrophe)
         {
-            StartCoroutine(AlertRoutine(alert, happinessAlert, 4f));            
+            StartCoroutine(AlertRoutine(alert, happinessAlert, 6f));            
 
             cards = cardManager.GetHappyCards();
 
