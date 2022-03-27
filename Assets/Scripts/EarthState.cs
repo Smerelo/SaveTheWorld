@@ -17,6 +17,7 @@ public class EarthState : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
         //ChangeEarthState();
     }
@@ -45,6 +46,7 @@ public class EarthState : MonoBehaviour
 
     public void UpdateEarthState()
     {
+        anim.SetBool("Ipad", true);
         //************   economy   ************//
         //SetStates(gameManager.economy,economySprite) ;
         //************   ecology   ************//
@@ -53,5 +55,6 @@ public class EarthState : MonoBehaviour
         SetStates(gameManager.science, scienceSprite);
         //************   happiness   ************//
         //SetStates(gameManager.happiness, happinessSprite);
+
     }
 }

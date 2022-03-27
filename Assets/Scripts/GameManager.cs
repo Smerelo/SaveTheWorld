@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
 
     private void ShowStats()
     {
+
         earthState.UpdateEarthState();
     }
 
