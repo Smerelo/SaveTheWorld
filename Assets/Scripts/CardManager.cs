@@ -8,16 +8,12 @@ public class CardManager : MonoBehaviour
 {
     [SerializeField] private CardDatabase cardDatabase;
     [SerializeField] private CardButton[] cardButtons;
-    public float tier3Chance = 25;
-    public float tier2Chance= 25;
-    private GameManager Manager;
     public List<Card> CardList;
     public List<Card> CardListTwo;
     public List<Card> CardListThree;
     public List<Card> CardListCatastrophe;
     private List<Card>[][] Cards;
     private int i1 = 0, i2 = 0;
-    private bool tier2, tier3;
     private void Awake()
     {
         Cards = FillLists();
@@ -26,7 +22,6 @@ public class CardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private List<Card>[][] FillLists()
@@ -62,35 +57,15 @@ public class CardManager : MonoBehaviour
 
     public CardButton[] GetCards()
     {
-        int n;
-        Card[] cardsData;
-        cardsData = new Card[2];
-
-        /*if (Manager.science > 40)
-        {
-            tier2 = true;
-            if (Manager.science > 70)
-            {
-                tier3 = true;
-            }
-        }
-
-        if (tier3 && UnityEngine.Random.Range(0,99) < tier3Chance)
-        {
-            n = UnityEngine.Random.Range(0, CardListThree.Count);
-            cardsData[0] = CardListThree[n];
-        }
-        else if (tier2 && UnityEngine.Random.Range(0, 99) < tier2Chance)
-        {
-            n = UnityEngine.Random.Range(0, CardListTwo.Count);
-            cardsData[0] = CardListTwo[n];
-        }*/
-        n = UnityEngine.Random.Range(0, CardList.Count);
+        int n = UnityEngine.Random.Range(0, CardList.Count);
+        Card[] cardsData = new Card[2];
         cardsData[0] = CardList[n];
         if ((int)cardsData[0].tier == 2)
         {
             if (!CheckMediumNb())
             {
+                Debug.Log("1 " + Cards[(int)cardsData[0].type][(int)cardsData[0].tier].Remove(cardsData[0]));
+                Debug.Log("3 " + CardList.Remove(cardsData[0]));
                  n = UnityEngine.Random.Range(0, CardList.Count);
                 cardsData[0] = CardList[n];
             }
@@ -145,7 +120,7 @@ public class CardManager : MonoBehaviour
             }
         }
         Debug.LogError("CACA2");
-        card = CardList[UnityEngine.Random.Range(0, CardList.Count)];
+
         return card;
     }
 
@@ -153,6 +128,8 @@ public class CardManager : MonoBehaviour
     {
         Debug.Log("here2");
         int rand = GetRandomNumber((int)card.type, (int)card.tier, 4);
+        Debug.Log((int)card.type + " type");
+        Debug.Log(rand + " rand");
         int cardIndex = UnityEngine.Random.Range(0, Cards[rand][(int)card.tier].Count);
         i2 = cardIndex;
         //Debug.Log($"rand {rand} tier {(int)card.tier} ");
