@@ -3590,7 +3590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentYear: 2022
-  endYear: 2023
+  endYear: 2034
   yearText: {fileID: 143606484}
   stats:
   - {fileID: 701910592}
