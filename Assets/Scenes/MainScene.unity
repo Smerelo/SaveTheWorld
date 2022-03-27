@@ -2413,9 +2413,33 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 516a7b82ad5544676bcfda7fc4e7be60, type: 2}
   - {fileID: 11400000, guid: 7a0eaf7b50b664bbbbd8a31e050acb65, type: 2}
   - {fileID: 11400000, guid: b13569c4aec39428da4703d1fbd645e0, type: 2}
-  CardListTwo: []
-  CardListThree: []
-  CardListCatastrophe: []
+  CardListTwo:
+  - {fileID: 11400000, guid: 7714386e7a62c41f9ac4646c4e122c50, type: 2}
+  - {fileID: 11400000, guid: 136ce5976710d4d3c86921ace1e25f65, type: 2}
+  - {fileID: 11400000, guid: e3fad06aa00f944279be73ea3c235249, type: 2}
+  - {fileID: 11400000, guid: c6dbb33d756024204b6818bd1284412c, type: 2}
+  - {fileID: 11400000, guid: 8802d9af08cda4fba974ea9d9f9b8ff3, type: 2}
+  - {fileID: 11400000, guid: a3a5ce9e601554f20a7ede92c50e2888, type: 2}
+  - {fileID: 11400000, guid: e3e04440f0ca24d0783984efced89c91, type: 2}
+  - {fileID: 11400000, guid: d348c1220c9ee45c986fa7601fe3af65, type: 2}
+  - {fileID: 11400000, guid: 88cce55326eb84baf8de1a098752a226, type: 2}
+  - {fileID: 11400000, guid: 67e00f994ccb94852b991723d4326d74, type: 2}
+  - {fileID: 11400000, guid: 5b6bac6cdabf24a9383bcc1bacfa0391, type: 2}
+  - {fileID: 11400000, guid: 13ebfaea2f30944cda69300149b2e9aa, type: 2}
+  CardListThree:
+  - {fileID: 11400000, guid: 11c0d22ad26994ffc999152415821433, type: 2}
+  - {fileID: 11400000, guid: 2f0b6fd700e994de683d5fdb6263d4e6, type: 2}
+  - {fileID: 11400000, guid: dc37a0666255a47ed975355face78415, type: 2}
+  - {fileID: 11400000, guid: 97e3828a7d4c544b5a023ec69d24328d, type: 2}
+  - {fileID: 11400000, guid: 0da6658f9725d4deb9dc5d2ffaed2063, type: 2}
+  - {fileID: 11400000, guid: 1fd123f57ddc24145a213a7b6f70d342, type: 2}
+  CardListCatastrophe:
+  - {fileID: 11400000, guid: 56e33ca76f6fc47839d55ec008f7d878, type: 2}
+  - {fileID: 11400000, guid: aa672481f3f9446ad9d1f7c5dee40781, type: 2}
+  - {fileID: 11400000, guid: 9ebffc5f0a3454337939f0cc444f2f29, type: 2}
+  - {fileID: 11400000, guid: ebe0e63f3f5ab4b35b8e094af725f096, type: 2}
+  - {fileID: 11400000, guid: d87c72250e592483fa9a2e2531da29c8, type: 2}
+  - {fileID: 11400000, guid: b533840402e7f496480de8ade93a6e5a, type: 2}
 --- !u!1 &1902799762
 GameObject:
   m_ObjectHideFlags: 0

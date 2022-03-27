@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     private CardButton[] cards;
     private int roundsSinceTreshold = 0, catastropheMultiplier = 0;
     [HideInInspector] public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
+    private bool catastrophe;
+    private bool catastropheHappened;
     private bool ecologyCatastrophe;
     private bool economyCatastrophe;
     private bool happinessCatastrophe;
@@ -54,6 +56,11 @@ public class GameManager : MonoBehaviour
 
     public void MakeChoice(int choice)
     {
+        if (catastrophe)
+        {
+            catastrophe = false;
+            catastropheHappened = true;
+        }
         if (!GameEnded)
         {
             turn++;
@@ -66,7 +73,12 @@ public class GameManager : MonoBehaviour
             {
                 ShowStats();
             }
-            cards = cardManager.GetCards();
+            if (!catastrophe)
+            {
+                cardManager.RemoveCard(cards[0].cardData, cards[1].cardData);
+                cards = cardManager.GetCards();
+            }
+
         }
 
     }
@@ -91,7 +103,11 @@ public class GameManager : MonoBehaviour
         happiness = Mathf.Clamp(happiness + card.happiness, 0, 100);
         science = Mathf.Clamp(science + card.science, 0, 100);
         economy = Mathf.Clamp(economy + card.economy, 0, 100);
-        //CheckForCatastrophe();
+        if (!catastropheHappened)
+        {
+            CheckForCatastrophe();
+
+        }
     }
 
     private void CheckForCatastrophe()
@@ -108,7 +124,10 @@ public class GameManager : MonoBehaviour
             int rand = UnityEngine.Random.Range(0, 100);
             if (rand < catastropheChance)
             {
+                catastrophe = true;
                 Catastrophe();
+
+
             }
         }
         else
@@ -121,18 +140,31 @@ public class GameManager : MonoBehaviour
     {
         if (ecologyCatastrophe)
         {
+             cards  = cardManager.GetEcoCards();
             Debug.Log("EcoCatastrophe");
         }
         else  if (economyCatastrophe)
         {
+            cards = cardManager.GetEconCards();
+
             Debug.Log("EconCatastrophe");
 
         }
         else if (happinessCatastrophe)
         {
+            cards = cardManager.GetHappyCards();
+
             Debug.Log("happCatastrophe");
 
         }
+        ecologyCatastrophe = false;
+        happinessCatastrophe = false;
+        economyCatastrophe = false;
+    }
+
+    private void GetEcoCards()
+    {
+        throw new NotImplementedException();
     }
 
     private void CompareTresholds()
