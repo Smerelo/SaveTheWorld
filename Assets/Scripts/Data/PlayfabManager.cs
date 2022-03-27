@@ -4,9 +4,18 @@ using UnityEngine;
 using PlayFab.ClientModels;
 using PlayFab;
 using System;
+using TMPro;
 
 public class PlayFabManager : MonoBehaviour
 {
+    public GameObject rowPrefab;
+    public Transform rowsParent;
+    [SerializeField] private GameObject ipad;
+    [SerializeField] private GameObject ipadLeaderBoardScreen;
+    [SerializeField] private GameObject earthScreen;
+
+    
+    public int score;
     void Start()
     {
         Login();
@@ -30,13 +39,13 @@ public class PlayFabManager : MonoBehaviour
             Debug.Log(error.GenerateErrorReport());
 }
 
-    public void SendLeaderboard(int score, string statisticName)
+    public void SendLeaderboard(int score)
     {
         var request = new UpdatePlayerStatisticsRequest
         {
             Statistics = new List<StatisticUpdate>{
                 new StatisticUpdate{
-                    StatisticName = statisticName,
+                    StatisticName = "Score",
                     Value = score
                 }
             }
@@ -47,12 +56,13 @@ public class PlayFabManager : MonoBehaviour
     private void OnleaderboardUpdate(UpdatePlayerStatisticsResult result)
     {
         Debug.Log("leaderboard sent successfully");
+        GetLeaderboard();
     }
 
     public void GetLeaderboard()
     {
         var request = new GetLeaderboardRequest{
-            StatisticName = "HappinessScore",
+            StatisticName = "Score",
             StartPosition = 0,
             MaxResultsCount = 10 
         };
@@ -61,9 +71,26 @@ public class PlayFabManager : MonoBehaviour
 
     private void OnleaderboardGet(GetLeaderboardResult result)
     {
+        Debug.Log("yo");
+        foreach(Transform item in rowsParent){
+            Destroy(item.gameObject);
+        }
             foreach(var item in result.Leaderboard)
             {
+                GameObject newGo = Instantiate(rowPrefab,rowsParent);
+                TextMeshProUGUI[] texts = newGo.GetComponentsInChildren<TextMeshProUGUI>();
+                texts[0].text = (item.Position + 1).ToString();
+                texts[1].text = item.PlayFabId;
+                texts[2].text = item.StatValue.ToString();
                 Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
             }
+    }
+
+    public void LeaderboardDisplay(int score)
+    {
+        SendLeaderboard(score);
+        ipad.GetComponent<Animator>().SetBool("Ipad", true);
+        ipadLeaderBoardScreen.SetActive(true);
+     //   earthScreen.SetActive(false);
     }
 }

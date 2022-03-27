@@ -465,7 +465,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2949366171977866670}
-  - component: {fileID: 2949366171977866672}
   - component: {fileID: 1358096641831877404}
   - component: {fileID: 1616796113}
   - component: {fileID: 5520524860949229843}
@@ -493,25 +492,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2949366171977866672
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2949366171977866669}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b6c33c60611a34f0fbd84e93f0d5a9ca, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1358096641831877404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,6 +515,8 @@ MonoBehaviour:
   - {fileID: 2949366172781622670}
   - {fileID: 6309835816893395565}
   happinessSprite: []
+  midState: 0
+  highState: 0
   _sprite: {fileID: 0}
 --- !u!114 &1616796113
 MonoBehaviour:
@@ -560,6 +542,8 @@ MonoBehaviour:
   - {fileID: 2949366172366568907}
   - {fileID: 0}
   happinessSprite: []
+  midState: 0
+  highState: 0
   _sprite: {fileID: 0}
 --- !u!61 &5520524860949229843
 BoxCollider2D:
@@ -599,7 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57e4a9e246ee4385b775de8b2f4358e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2949366171977866672}
+  animator: {fileID: 0}
   button:
   - {fileID: 0}
   - {fileID: 0}

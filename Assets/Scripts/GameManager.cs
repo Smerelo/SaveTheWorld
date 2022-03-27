@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshPro yearText;
     [SerializeField] private TextMeshPro[] stats;
     [SerializeField] private int catastropheTreshold = 15;
+    private int finalScore;
     [SerializeField] private CardUI card1, card2;
     private CardManager cardManager;
     private EarthState earthState;
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     private float catastropheChance = 0f;
     private CardButton[] cards;
     private int roundsSinceTreshold = 0, catastropheMultiplier = 0;
-    [HideInInspector] public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
+    public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
     private bool catastrophe;
     private bool catastropheHappened;
     private bool ecologyCatastrophe;
@@ -38,11 +39,12 @@ public class GameManager : MonoBehaviour
         cardManager = GameObject.Find("CardManager").GetComponent<CardManager>();
         cards = cardManager.GetCards();
         UpdateStats();
+        finalScore = 35;
     }
 
     void Update()
     {
-        if (currentYear == endYear)
+        if (currentYear == endYear && GameEnded == false)
         {       
             EndGame();
         }       
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
-        //playFabManager.SendLeaderboard(happiness, "Happiness");        
+        playFabManager.LeaderboardDisplay(finalScore);        
         GameEnded = true;
     }
 
@@ -78,7 +80,6 @@ public class GameManager : MonoBehaviour
                 cardManager.RemoveCard(cards[0].cardData, cards[1].cardData);
                 cards = cardManager.GetCards();
             }
-
         }
 
     }

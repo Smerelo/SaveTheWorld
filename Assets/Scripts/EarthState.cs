@@ -49,13 +49,12 @@ public class EarthState : MonoBehaviour
     {
         anim.SetBool("Ipad", true);
         //************   economy   ************//
-        //SetStates(gameManager.economy,economySprite) ;
+        SetStates(gameManager.economy,economySprite) ;
         //************   ecology   ************//
         SetStates(gameManager.ecology, ecologySprite);
         //************  science  ************//
         SetStates(gameManager.science, scienceSprite);
         //************   happiness   ************//
-        //SetStates(gameManager.happiness, happinessSprite);
-
+        SetStates(gameManager.happiness, happinessSprite);
     }
 }
