@@ -16,9 +16,9 @@ MonoBehaviour:
   title: Objectif lune
   description: "Gr\xE2ce \xE0 la science le cancer ne sera qu\u2019un lointain souvenir. "
   economy: 0
-  happiness: 10
+  happiness: 5
   ecology: 0
   science: 0
   scienceTier: 1
-  tier: 0
+  tier: 2
   type: 1

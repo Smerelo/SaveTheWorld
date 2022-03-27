@@ -18,8 +18,8 @@ MonoBehaviour:
     ! Une partie de la population part vivre dans les oc\xE9ans. "
   economy: 0
   happiness: 0
-  ecology: 10
+  ecology: 5
   science: 0
   scienceTier: 1
-  tier: 0
+  tier: 2
   type: 2

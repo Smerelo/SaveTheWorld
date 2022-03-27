@@ -16,9 +16,9 @@ MonoBehaviour:
   title: 'Beau temps '
   description: "La m\xE9t\xE9o peut \xEAtre modifi\xE9e selon notre volont\xE9. "
   economy: 0
-  happiness: 10
+  happiness: 5
   ecology: 0
   science: 0
   scienceTier: 1
-  tier: 0
+  tier: 2
   type: 1
