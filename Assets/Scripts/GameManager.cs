@@ -30,7 +30,12 @@ public class GameManager : MonoBehaviour
     private bool GameEnded { get; set; }
     private bool TresholdReached { get; set; }
 
-
+        //ALERT VARIABLES//
+    [SerializeField] private Animator ipadAnim;
+    [SerializeField] private GameObject alert;
+    [SerializeField] private GameObject economyAlert;
+    [SerializeField] private GameObject ecologyAlert;
+    [SerializeField] private GameObject happinessAlert;
 
     void Start()
     {
@@ -84,7 +89,6 @@ public class GameManager : MonoBehaviour
         }
 
     }
-
 
     private void ShowStats()
     {
@@ -143,11 +147,14 @@ public class GameManager : MonoBehaviour
     {
         if (ecologyCatastrophe)
         {
-             cards  = cardManager.GetEcoCards();
+            StartCoroutine(AlertRoutine(alert, ecologyAlert, 4f));            
+            cards  = cardManager.GetEcoCards();
             Debug.Log("EcoCatastrophe");
         }
         else  if (economyCatastrophe)
         {
+            StartCoroutine(AlertRoutine(alert, economyAlert, 4f));            
+
             cards = cardManager.GetEconCards();
 
             Debug.Log("EconCatastrophe");
@@ -155,6 +162,8 @@ public class GameManager : MonoBehaviour
         }
         else if (happinessCatastrophe)
         {
+            StartCoroutine(AlertRoutine(alert, happinessAlert, 4f));            
+
             cards = cardManager.GetHappyCards();
 
             Debug.Log("happCatastrophe");
@@ -163,6 +172,17 @@ public class GameManager : MonoBehaviour
         ecologyCatastrophe = false;
         happinessCatastrophe = false;
         economyCatastrophe = false;
+    }
+
+    IEnumerator AlertRoutine(GameObject alert, GameObject alertType ,float time)
+    {
+        ipadAnim.SetTrigger("Ipad");
+       // AudioManager.AudioInstance.Play("Alert");
+        alert.SetActive(true);
+        alertType.SetActive(true);
+        yield return new WaitForSeconds(time);
+        alert.SetActive(false);
+        alertType.SetActive(false);
     }
 
     private void GetEcoCards()
