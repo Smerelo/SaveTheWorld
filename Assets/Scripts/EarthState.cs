@@ -14,6 +14,7 @@ public class EarthState : MonoBehaviour
     public int midState;
     public int highState;
     public Sprite _sprite;
+    private Animator anim;
 
     void Start()
     {

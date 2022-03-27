@@ -2686,6 +2686,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2140919396}
     - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: midState
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: highState
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616796113, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: scienceSprite.Array.data[0]
       value: 
       objectReference: {fileID: 448329559}
