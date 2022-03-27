@@ -7,7 +7,7 @@ using TMPro;
 public class CardButton : MonoBehaviour
 {
     public TextMeshProUGUI title, description;
-    public Sprite sprite;
+    public Image image;
 
     [HideInInspector]public Card cardData;
 

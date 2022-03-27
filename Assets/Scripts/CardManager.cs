@@ -123,7 +123,7 @@ public class CardManager : MonoBehaviour
         {
             cardButtons[i].title.text = cards[i].title;
             cardButtons[i].description.text = cards[i].description;
-            cardButtons[i].sprite = cards[i].sprite;
+            cardButtons[i].image.sprite = cards[i].sprite;
             cardButtons[i].cardData = cards[i];
         }
     }

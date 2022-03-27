@@ -5,10 +5,24 @@ using UnityEngine;
 public class Signature : MonoBehaviour
 {
     
-    public GameObject animation;
-
-    public void PlayAnimation()
+    public int id;
+    public GameManager gameManager;
+    public Animator animator;
+    public void Start()
     {
-        animation.SetActive(true);
+        gameManager = FindObjectOfType<GameManager>();
+    }
+    public void Sign()
+    {
+        animator.SetBool("PaperSigned", true);
+
+        StartCoroutine(WaitOneSec(1));
+    }
+
+    IEnumerator WaitOneSec(float time)
+    {
+        yield return new WaitForSeconds(time);
+        animator.SetBool("PaperSigned", false);
+        gameManager.MakeChoice(id);
     }
 }
