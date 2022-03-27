@@ -119,8 +119,9 @@ public class CardManager : MonoBehaviour
                 return card;
             }
         }
-        Debug.LogError("CACA2");
+        Debug.Log("CACA2");
 
+        card = CardList[UnityEngine.Random.Range(0, CardList.Count)];
         return card;
     }
 
