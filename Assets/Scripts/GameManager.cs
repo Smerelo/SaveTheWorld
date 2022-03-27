@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private CardManager cardManager;
     private EarthState earthState;
     private PlayFabManager playFabManager;
-    private float catastropheChance = 0f;
+    public float catastropheChance = 0f;
     private CardButton[] cards;
     private int roundsSinceTreshold = 0, catastropheMultiplier = 0;
     public int ecology = 25, happiness = 25, science = 25, economy = 25, turn = 0;
