@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshPro yearText;
     [SerializeField] private TextMeshPro[] stats;
     [SerializeField] private int catastropheTreshold = 15;
-    private int finalScore;
+    private float finalScore;
     [SerializeField] private CardUI card1, card2;
     private CardManager cardManager;
     private EarthState earthState;
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     private bool economyCatastrophe;
     private bool happinessCatastrophe;
     private int tweenId = 0;
+
 
     private bool GameEnded { get; set; }
     private bool TresholdReached { get; set; }
@@ -59,22 +60,24 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         finalScore = 0;
-        finalScore += StatPoints(ecology);
-        finalScore += StatPoints(economy) ;
-        finalScore += StatPoints(happiness);
-        finalScore += StatPoints(science);
+        finalScore += StatPoints(ecology, 10);
+        finalScore += StatPoints(economy, 5) ;
+        finalScore += StatPoints(happiness, 10);
+        finalScore += StatPoints(science, 5);
+        float maxScore = 460f;
+        finalScore /= maxScore/100f;
         GameEnded = true;
         outroCanvas.SetActive(true);
-        playFabManager.LeaderboardDisplay(finalScore);        
+        playFabManager.LeaderboardDisplay((int)finalScore);        
     }
 
-    private int StatPoints(int stat)
+    private int StatPoints(int stat, int bonus)
     {
         int result = 0;
         if (stat >= 60)
-            result += 100;
+            result += 100 + (bonus*2);
         else if (stat >= 50)
-            result += 50;
+            result += 50 + bonus;
         return result;
     }
 
@@ -128,8 +131,8 @@ public class GameManager : MonoBehaviour
         economy = Mathf.Clamp(economy + card.economy, 0, 100);
         if (!catastropheHappened)
         {
-            CheckForCatastrophe();
-
+            if (currentYear > 3 && currentYear < endYear-1)
+                CheckForCatastrophe();
         }
     }
 
@@ -149,8 +152,6 @@ public class GameManager : MonoBehaviour
             {
                 catastrophe = true;
                 Catastrophe();
-
-
             }
         }
         else

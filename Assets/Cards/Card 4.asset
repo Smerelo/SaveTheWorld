@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
   title: Sense 8
-  description: "Redonne les sens perdus gr\xE2ce \xE0 des modules bioniques. Faites-vous
-    greffer une troisi\xE8me oreille."
+  description: "Redonne les sens perdus gr\xE2ce \xE0 des modules bioniques. Vous
+    pouvez aussi vous faire greffer une troisi\xE8me oreille."
   economy: 0
   happiness: 15
   ecology: -10

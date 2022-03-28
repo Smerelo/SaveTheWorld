@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Card 52
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 2dd1386fbdd5a4b36ad2a7cd0a177bc3, type: 3}
-  title: 'Beau temps '
-  description: "La m\xE9t\xE9o peut \xEAtre modifi\xE9e selon notre volont\xE9. "
+  title: "Miss M\xE9t\xE9o"
+  description: "Technologie permettant d\u2019influencer la m\xE9t\xE9o."
   economy: 0
   happiness: 5
   ecology: 0

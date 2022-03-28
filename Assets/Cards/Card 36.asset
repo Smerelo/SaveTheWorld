@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Card 36
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 09dcd3ff5efae4c808a39eaa11680915, type: 3}
-  title: Scoobidoo
-  description: "Les animaux pourront exprimer des pens\xE9es simples. "
+  title: Scoobisoft
+  description: "Le collier connecte exprimer des pens\xE9es simples. "
   economy: 0
   happiness: 0
   ecology: 5

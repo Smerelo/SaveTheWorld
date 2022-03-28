@@ -5,7 +5,7 @@ using PlayFab.ClientModels;
 using PlayFab;
 using System;
 using TMPro;
-
+using UnityEngine.UI;
 public class PlayFabManager : MonoBehaviour
 {
     public GameObject rowPrefab;
@@ -13,6 +13,8 @@ public class PlayFabManager : MonoBehaviour
     [SerializeField] private GameObject ipad;
     [SerializeField] private GameObject ipadLeaderBoardScreen;
     [SerializeField] private GameObject earthScreen;
+
+    public TextMeshProUGUI nameInput;
 
     void Start()
     {
@@ -22,13 +24,19 @@ public class PlayFabManager : MonoBehaviour
     {
         var request= new LoginWithCustomIDRequest{
             CustomId = SystemInfo.deviceUniqueIdentifier,
-            CreateAccount = true
+            CreateAccount = true,
+            InfoRequestParameters = new GetPlayerCombinedInfoRequestParams{
+                GetPlayerProfile = true
+            }
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnSucess, OnError);
     }
     void OnSucess(LoginResult result)
     {
             Debug.Log("Account Succesfully created/SuccessfulLogin");
+            string name = null;
+            if(result.InfoResultPayload.PlayerProfile != null)
+                name = result.InfoResultPayload.PlayerProfile.DisplayName;
     }
 
         void OnError(PlayFabError error)
@@ -77,8 +85,8 @@ public class PlayFabManager : MonoBehaviour
                 GameObject newGo = Instantiate(rowPrefab,rowsParent);
                 TextMeshProUGUI[] texts = newGo.GetComponentsInChildren<TextMeshProUGUI>();
                 texts[0].text = (item.Position + 1).ToString();
-                texts[1].text = item.PlayFabId;
-                texts[2].text = item.StatValue.ToString();
+                texts[1].text = item.DisplayName;
+                texts[2].text = item.StatValue.ToString() + "/100";
                 Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
             }
     }
@@ -96,4 +104,17 @@ public class PlayFabManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         GetLeaderboard();
     }
+
+    public void SubmitNameButton(){
+        var request = new UpdateUserTitleDisplayNameRequest{
+            DisplayName = nameInput.text,
+        };
+        PlayFabClientAPI.UpdateUserTitleDisplayName(request, OnDisplayNameUpdate, OnError);
+    }
+
+    private void OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult result)
+    {
+       Debug.Log("Updated display name");
+    }
+
 }

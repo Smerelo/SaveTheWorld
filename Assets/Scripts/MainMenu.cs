@@ -7,13 +7,8 @@ using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
-    public TextMeshProUGUI displayText;
-
-    public void DisplayText()
+    public void ReloadGame()
     {
-
-        displayText.gameObject.SetActive(false);
-        this.gameObject.SetActive(false);
-
+        SceneManager.LoadScene(0);
     }
 }

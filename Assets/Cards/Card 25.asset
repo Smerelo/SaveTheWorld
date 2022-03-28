@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Card 25
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5cfd9bbfdae24448ba5dba271a6abd99, type: 3}
-  title: Franklin la tortue
-  description: "Le robot Frankllin savait compter 2 par 2 et lasser ses chaussures.
-    Il ramasse maintenant les d\xE9chets sous l eau."
+  title: Franklin
+  description: "Le robot Franklin ramasse les d\xE9chets sous l'ocean."
   economy: -5
   happiness: 0
   ecology: 10
