@@ -371,7 +371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Ashkan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df59b01edf4834275b4d45d231d52e26, type: 2}
   m_sharedMaterial: {fileID: 6712631274638351549, guid: df59b01edf4834275b4d45d231d52e26, type: 2}

@@ -158,6 +158,8 @@ MonoBehaviour:
   ipadLeaderBoardScreen: {fileID: 731861859}
   earthScreen: {fileID: 1442751590}
   nameInput: {fileID: 987694712}
+  emailInput: {fileID: 0}
+  passwordInput: {fileID: 0}
 --- !u!4 &74921491
 Transform:
   m_ObjectHideFlags: 0
@@ -1199,7 +1201,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 74921490}
         m_TargetAssemblyTypeName: PlayFabManager, Assembly-CSharp
-        m_MethodName: SubmitNameButton
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2808,7 +2810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5271619639577928703, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8219031920655192098, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
       propertyPath: m_LocalScale.x
@@ -3882,7 +3884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7, y: -14.000061}
+  m_AnchoredPosition: {x: 7, y: -14}
   m_SizeDelta: {x: -1315.373, y: -817.9978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1536599871
@@ -4186,7 +4188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outroCanvas: {fileID: 1174822060}
   currentYear: 2030
-  endYear: 2033
+  endYear: 2042
   yearText: {fileID: 143606484}
   stats:
   - {fileID: 701910592}
@@ -4194,6 +4196,7 @@ MonoBehaviour:
   - {fileID: 758890986}
   - {fileID: 897610879}
   catastropheTreshold: 35
+  finalScore: 0
   card1: {fileID: 0}
   card2: {fileID: 0}
   catastropheChance: 50
@@ -4528,6 +4531,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 731861859, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 731861863, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: m_Camera
       value: 
@@ -4548,6 +4555,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2141924051, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1356898822958949271, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4567,6 +4578,10 @@ PrefabInstance:
     - target: {fileID: 2949366171977866669, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: m_Name
       value: Ipad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949366171977866669, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2949366171977866670, guid: df6423d1c336545efb894e80bb2246e8, type: 3}
       propertyPath: m_RootOrder
@@ -5239,7 +5254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5271619639577928703, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8219031920655192098, guid: 202003b3ca64d4299aec1af00aeaf906, type: 3}
       propertyPath: m_LocalScale.x

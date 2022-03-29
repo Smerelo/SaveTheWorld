@@ -16,14 +16,17 @@ public class PlayFabManager : MonoBehaviour
 
     public TextMeshProUGUI nameInput;
 
+    public TMP_InputField emailInput;
+    public TMP_InputField passwordInput;
+
     void Start()
     {
-        Login();
+      //  Login();
     }
-    void Login()
+    public void Login()
     {
         var request= new LoginWithCustomIDRequest{
-            CustomId = SystemInfo.deviceUniqueIdentifier,
+            CustomId = nameInput.text,
             CreateAccount = true,
             InfoRequestParameters = new GetPlayerCombinedInfoRequestParams{
                 GetPlayerProfile = true
@@ -31,12 +34,30 @@ public class PlayFabManager : MonoBehaviour
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnSucess, OnError);
     }
+
+    // public void RegisterButton()
+    // {
+    //     var request = new RegisterPlayFabUserRequest{
+    //             Email = emailInput.text,
+    //             Password = passwordInput.text,
+    //             RequireBothUsernameAndEmail = false
+    //     };
+    //     PlayFabClientAPI.RegisterPlayFabUser(request,OnRegisterSuccess, OnError);
+            
+    //
+
+    private void OnRegisterSuccess(RegisterPlayFabUserResult result)
+    {
+       // messageText
+    }
+
     void OnSucess(LoginResult result)
     {
             Debug.Log("Account Succesfully created/SuccessfulLogin");
             string name = null;
             if(result.InfoResultPayload.PlayerProfile != null)
                 name = result.InfoResultPayload.PlayerProfile.DisplayName;
+                SubmitNameButton();
     }
 
         void OnError(PlayFabError error)

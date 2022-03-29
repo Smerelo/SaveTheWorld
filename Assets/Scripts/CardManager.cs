@@ -17,11 +17,6 @@ public class CardManager : MonoBehaviour
     private void Awake()
     {
         Cards = FillLists();
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
     }
 
     private List<Card>[][] FillLists()

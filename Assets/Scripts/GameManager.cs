@@ -10,9 +10,10 @@ public class GameManager : MonoBehaviour
     public GameObject outroCanvas;
     [SerializeField] private int currentYear = 0, endYear = 100;
     [SerializeField] private TextMeshPro yearText;
+    
     [SerializeField] private TextMeshPro[] stats;
     [SerializeField] private int catastropheTreshold = 15;
-    private float finalScore;
+    [HideInInspector] public float finalScore;
     [SerializeField] private CardUI card1, card2;
     private CardManager cardManager;
     private EarthState earthState;
@@ -39,6 +40,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject ecologyAlert;
     [SerializeField] private GameObject happinessAlert;
 
+
+    void Awake()
+    {}
     void Start()
     {
         earthState = FindObjectOfType<EarthState>();
@@ -111,7 +115,6 @@ public class GameManager : MonoBehaviour
 
     private void ShowStats()
     {
-
         earthState.UpdateEarthState();
     }
 
@@ -274,7 +277,6 @@ public class GameManager : MonoBehaviour
         else
         {
             economyCatastrophe = false;
-
         }
 
         if (happiness < catastropheTreshold)
