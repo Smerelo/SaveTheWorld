@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 09dcd3ff5efae4c808a39eaa11680915, type: 3}
   title: Scoobisoft
-  description: "Le collier connecte exprimer des pens\xE9es simples. "
+  description: "Un collier connect\xE9 qui permet aux animaux d'exprimer des pens\xE9es
+    simples. "
   economy: 0
   happiness: 0
   ecology: 5

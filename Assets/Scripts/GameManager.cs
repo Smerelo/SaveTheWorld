@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject outroCanvas;
     [SerializeField] private int currentYear = 0, endYear = 100;
-    [SerializeField] private TextMeshPro yearText;
-    
+    [SerializeField] private TextMeshProUGUI yearText;
+
     [SerializeField] private TextMeshPro[] stats;
     [SerializeField] private int catastropheTreshold = 15;
     [HideInInspector] public float finalScore;
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     private bool GameEnded { get; set; }
     private bool TresholdReached { get; set; }
 
-        //ALERT VARIABLES//
+    //ALERT VARIABLES//
     [SerializeField] private Animator ipadAnim;
     [SerializeField] private GameObject alert;
     [SerializeField] private GameObject economyAlert;
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
 
     void Awake()
-    {}
+    { }
     void Start()
     {
         earthState = FindObjectOfType<EarthState>();
@@ -56,30 +56,30 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (currentYear == endYear && GameEnded == false)
-        {       
+        {
             EndGame();
-        }       
+        }
     }
 
     private void EndGame()
     {
         finalScore = 0;
         finalScore += StatPoints(ecology, 10);
-        finalScore += StatPoints(economy, 5) ;
+        finalScore += StatPoints(economy, 5);
         finalScore += StatPoints(happiness, 10);
         finalScore += StatPoints(science, 5);
         float maxScore = 460f;
-        finalScore /= maxScore/100f;
+        finalScore /= maxScore / 100f;
         GameEnded = true;
         outroCanvas.SetActive(true);
-        playFabManager.LeaderboardDisplay((int)finalScore);        
+        playFabManager.LeaderboardDisplay((int)finalScore);
     }
 
     private int StatPoints(int stat, int bonus)
     {
         int result = 0;
         if (stat >= 60)
-            result += 100 + (bonus*2);
+            result += 100 + (bonus * 2);
         else if (stat >= 50)
             result += 50 + bonus;
         return result;
@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateStats()
     {
-        stats[0].text = "Eco " +  ecology.ToString();
+        stats[0].text = "Eco " + ecology.ToString();
         stats[1].text = "Happ " + happiness.ToString();
         stats[2].text = "sci " + science.ToString();
         stats[3].text = "econ " + economy.ToString();
@@ -128,20 +128,20 @@ public class GameManager : MonoBehaviour
 
     private void AddPoints(Card card)
     {
-        ecology =  Mathf.Clamp( ecology + card.ecology, 0, 100);
+        ecology = Mathf.Clamp(ecology + card.ecology, 0, 100);
         happiness = Mathf.Clamp(happiness + card.happiness, 0, 100);
         science = Mathf.Clamp(science + card.science, 0, 100);
         economy = Mathf.Clamp(economy + card.economy, 0, 100);
         if (!catastropheHappened)
         {
-            if (currentYear > 3 && currentYear < endYear-1)
+            if (turn > 2 && currentYear < endYear - 1)
                 CheckForCatastrophe();
         }
     }
 
     private void CheckForCatastrophe()
     {
-      
+
         if (TresholdReached)
         {
             CompareTresholds();
@@ -167,13 +167,13 @@ public class GameManager : MonoBehaviour
     {
         if (ecologyCatastrophe)
         {
-            StartCoroutine(AlertRoutine(alert, ecologyAlert, 6f));            
-            cards  = cardManager.GetEcoCards();
+            StartCoroutine(AlertRoutine(alert, ecologyAlert, 6f));
+            cards = cardManager.GetEcoCards();
             Debug.Log("EcoCatastrophe");
         }
-        else  if (economyCatastrophe)
+        else if (economyCatastrophe)
         {
-            StartCoroutine(AlertRoutine(alert, economyAlert, 6f));            
+            StartCoroutine(AlertRoutine(alert, economyAlert, 6f));
 
             cards = cardManager.GetEconCards();
 
@@ -182,7 +182,7 @@ public class GameManager : MonoBehaviour
         }
         else if (happinessCatastrophe)
         {
-            StartCoroutine(AlertRoutine(alert, happinessAlert, 6f));            
+            StartCoroutine(AlertRoutine(alert, happinessAlert, 6f));
 
             cards = cardManager.GetHappyCards();
 
@@ -194,16 +194,18 @@ public class GameManager : MonoBehaviour
         economyCatastrophe = false;
     }
 
-    IEnumerator AlertRoutine(GameObject alert, GameObject alertType ,float time)
+    IEnumerator AlertRoutine(GameObject alert, GameObject alertType, float time)
     {
 
-        ipadAnim.SetTrigger("Ipad");
-       AudioManager.AudioInstance.Play("Alarm");
+        ipadAnim.SetBool("Ipad", true);
+        AudioManager.AudioInstance.Play("Alarm");
         alert.SetActive(true);
         alertType.SetActive(true);
         yield return new WaitForSeconds(time);
+        ipadAnim.SetBool("Ipad", false);
         alert.SetActive(false);
         alertType.SetActive(false);
+
     }
 
     private void GetEcoCards()
