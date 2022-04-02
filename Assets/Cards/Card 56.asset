@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 09dcd3ff5efae4c808a39eaa11680915, type: 3}
   title: Objectif lune
-  description: "On a d\xE9couvert des gisement de m\xE9taux rare sur la lune, il
+  description: "On a d\xE9couvert des gisements de m\xE9taux rares sur la lune, il
     est temps d\u2019aller les miner ! "
   economy: 5
   happiness: 0

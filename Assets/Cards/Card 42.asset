@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: dc0052c41f31042f59278ca2e92781f1, type: 3}
   title: ReLife
-  description: "La soci\xE9t\xE9 ReLife fait une lev\xE9e de fond. Son concept :
+  description: "La soci\xE9t\xE9 ReLife fait une lev\xE9e de fonds. Son concept :
     stimuler la libido des animaux en voie de disparition."
   economy: 0
   happiness: -5

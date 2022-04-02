@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 83e18b54cdd6745a593475cb96c7fda7, type: 3}
   title: Korben Dallas
-  description: "Un taxi drone vous am\xE8ne a l\u2019autre de bout de la ville par
-    les airs, plus de temps \xE0 perdre."
+  description: "Un taxi drone vous am\xE8ne \xE0 l\u2019autre de bout de la ville
+    par les airs, plus de temps \xE0 perdre."
   economy: 10
   happiness: -5
   ecology: 0

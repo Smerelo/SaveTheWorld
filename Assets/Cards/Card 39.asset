@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d6194a4dd8cc3439db036df0c14ca0d9, type: 3}
   title: 'Toilettes japonaises 3.0 '
-  description: "Nani !? Le prix Nobel de math\xE9matique japonais a cr\xE9\xE9 des
-    toilettes parlantes qui analysent vos excr\xE9ments."
+  description: "Nani !? Le prix Nobel de physiologie japonais a cr\xE9\xE9 des toilettes
+    parlantes qui analysent vos excr\xE9ments."
   economy: -5
   happiness: 5
   ecology: 5

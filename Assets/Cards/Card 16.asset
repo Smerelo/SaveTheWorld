@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 83e18b54cdd6745a593475cb96c7fda7, type: 3}
   title: Tourisme spatial
-  description: "Le r\xEAve de tous ceux qui voulaient devenir astronaute quand ils
-    \xE9taient petit. "
+  description: "Le r\xEAve de tous ceux qui voulaient devenir astronautes quand ils
+    \xE9taient petits. "
   economy: 10
   happiness: 0
   ecology: -5

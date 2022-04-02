@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a32bc4d1e2edd4c98ab85e6c423fc48f, type: 3}
   title: Jurassic park
-  description: "Un riche industrielle cherche votre soutien pour r\xE9aliser un parc
-    d\u2019un nouveau genre\u2026  "
+  description: "Une riche industrielle cherche votre soutien pour r\xE9aliser un
+    parc d\u2019un nouveau genre\u2026  "
   economy: 5
   happiness: 0
   ecology: -5

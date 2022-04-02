@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
   title: "Banque d\xE9centralis\xE9e "
-  description: "Vous pouvez pr\xEAter ou emprunter de l\u2019argent a un particulier
+  description: "Vous pouvez pr\xEAter ou emprunter de l\u2019argent \xE0 un particulier
     en toute s\xE9curit\xE9 gr\xE2ce \xE0 la technologie blockchain. "
   economy: 5
   happiness: 0

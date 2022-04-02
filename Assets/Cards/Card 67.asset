@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 59a0fbc3939784e75a53919f2f1cc5ec, type: 3}
   title: Polluer le pays
-  description: "La r\xE9volution \xE0 \xE9t\xE9 entendue mais elle a laiss\xE9 des
-    traces dans l\u2019environnement."
+  description: "La r\xE9volution a \xE9t\xE9 entendue mais elle a laiss\xE9 des traces
+    dans l\u2019environnement."
   economy: 0
   happiness: 25
   ecology: -20

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5649c6b7aeefc495e921cc3e8c7e47b9, type: 3}
   title: Ready Player One
-  description: "Le M\xE9taverse est pr\xEAt a \xEAtre lanc\xE9, vous ne savez pas
-    ce que c\u2019est ? Nous non plus."
+  description: "Le M\xE9taverse est pr\xEAt \xE0 \xEAtre lanc\xE9, vous ne savez
+    pas ce que c\u2019est. Nous non plus."
   economy: 15
   happiness: -10
   ecology: 0

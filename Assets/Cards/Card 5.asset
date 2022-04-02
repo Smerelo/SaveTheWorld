@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a40c2844a2be541fe8127457f847c360, type: 3}
   title: SMR Land
-  description: "Le nucl\xE9aire c\u2019est g\xE9nial : Investissez dans la construction
+  description: "Le nucl\xE9aire c\u2019est g\xE9nial : investissez dans la construction
     de petits r\xE9acteurs nucl\xE9aires. "
   economy: 0
   happiness: -10
